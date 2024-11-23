@@ -22,7 +22,32 @@ This project implements a simple and interactive **Flappy Bird** game using Java
    ```bash
    git clone [https://github.com/Latthika/Flappy-bird-game-.git]
 2. Compile the Code:
+- Ensure you have Java Development Kit (JDK) installed.
+- Compile the Java files:
+  ```bash
+  javac App.java FlappyBird.java
+3. Run the Game:
+    ```bash
+    java App
+## How to Play
+- Objective: Control the bird to navigate through the pipes without collision.
+- Controls:
+  - Press the spacebar to make the bird flap and ascend.
+  - Release the spacebar to let gravity pull the bird down.
+- Scoring: Earn points for each successful pass through a set of pipes.
+- Game Over: Occurs when:
+  - The bird collides with a pipe.
+  - The bird falls out of bounds.
+ # Code Files
+1. App.java
+This file sets up the game window using Swing and initializes the main game loop.
 
-Ensure you have Java Development Kit (JDK) installed.
-Compile the Java files:   
-   
+2. FlappyBird.java
+This file contains:
+
+- Game logic: Bird movement, pipe spawning, collision detection, and scoring.
+- Rendering: Draws the bird, pipes, and background.
+- Sound integration: Plays sound effects for key actions like flapping and scoring.    
+## Resources
+- Images: Background, bird, and pipe images are stored in the /resource folder.
+- Sounds: Sound effects (flap.wav, score.wav, gameover.wav) are also in the /resource folder.  
